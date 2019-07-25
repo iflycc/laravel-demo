@@ -1,0 +1,26 @@
+{
+    "name": "iflycc/iflycc",
+    "description": "This is a composer-extension test!",
+    "authors": [
+        {
+            "name": "iflycc",
+            "email": "just.cc@icloud.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers":[
+                "IFly\\JustDemo\\Providers\\IFlyServiceProvider"
+            ],
+            "aliases":{
+                "IFly":"IFly\\JustDemo\\Facades\\IFly"
+            }
+        }
+    },
+    "autoload":{
+        "psr-4":{
+            "IFly\\JustDemo\\":"src/"
+        }
+    }
+}
